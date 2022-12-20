@@ -1,11 +1,10 @@
 interface IName {
-  name: string,
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
-  ref: any
-
+  name: string;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  ref: any;
 }
 
-const NameInput: React.FC<IName> = (props ) => {
+export const NameInput: React.FC<IName> = (props) => {
   return (
     <input
       placeholder="Name"
@@ -27,4 +26,3 @@ const NameInput: React.FC<IName> = (props ) => {
     />
   );
 };
-export default NameInput;

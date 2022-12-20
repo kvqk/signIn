@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import * as yup from "yup";
-import EmailInput from "../Email-Input";
-import NameInput from "../Name-input";
-import AgeInput from "../Age-input";
-import PasswordInput from "../Password-input";
-import DOBInput from "../DOB-Input";
-import ConfirmPassWordInput from "../ConfirmPassword-input";
+import { EmailInput } from "../Email-Input";
+import { NameInput } from "../Name-input";
+import { AgeInput } from "../Age-input";
+import { PasswordInput } from "../Password-input";
+import { DOBInput } from "../DOB-Input";
+import { ConfirmPassWordInput } from "../ConfirmPassword-input";
 import { auth, db } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, collection, setDoc } from "firebase/firestore";
@@ -51,7 +51,7 @@ const validationSchema = yup.object().shape({
 //declare signUpForm = () = >
 //const form values,setFormValues in array, is equal to useState initial values
 // const formError setFormError in array, is equal to useState({...initialValues. required ""})
-const SignUpForm = () => {
+export const SignUpForm = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formError, setFormError] = useState({
     ...initialValues,
@@ -165,5 +165,3 @@ const SignUpForm = () => {
     </div>
   );
 };
-
-export default SignUpForm;

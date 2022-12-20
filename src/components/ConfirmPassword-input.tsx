@@ -1,12 +1,12 @@
-
+import React from "react";
 
 interface IConfirmPassword {
-  name: string,
-  ref: any,
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name: string;
+  ref: any;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const ConfirmPassWordInput:  React.FC<IConfirmPassword> = (props) => {
+export const ConfirmPassWordInput: React.FC<IConfirmPassword> = (props) => {
   return (
     <input
       placeholder="Confirm Password"
@@ -19,11 +19,10 @@ const ConfirmPassWordInput:  React.FC<IConfirmPassword> = (props) => {
         height: "30px",
         width: "300px",
         borderLeftStyle: "hidden",
-        borderRightStyle: "hidden" ,
-        borderTopStyle: "hidden"
+        borderRightStyle: "hidden",
+        borderTopStyle: "hidden",
       }}
       onChange={props.handleChange}
     />
   );
 };
-export default ConfirmPassWordInput;

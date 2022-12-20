@@ -1,13 +1,12 @@
+import React from "react";
+
 interface IAge {
-  name: string,
-  ref: any,
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name: string;
+  ref: any;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-
-
-
-const AgeInput:  React.FC<IAge> = (props) => {
+export const AgeInput: React.FC<IAge> = (props) => {
   return (
     <input
       placeholder="Age"
@@ -28,5 +27,3 @@ const AgeInput:  React.FC<IAge> = (props) => {
     />
   );
 };
-
-export default AgeInput;

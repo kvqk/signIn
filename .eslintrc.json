@@ -1,0 +1,65 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": ["./tsconfig.json"],
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/comma-dangle": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "": "never",
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    "no-shadow": "off",
+    "semi": [0, "always"],
+    "@typescript-eslint/semi": 0,
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "prettier/prettier": "error",
+    "max-len": ["off", { "code": 80 }],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off",
+    "quotes": "off",
+    "@typescript-eslint/quotes": [0, "warn"],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "func-names": "off",
+    "class-methods-use-this": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

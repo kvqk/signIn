@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SignInForm from "./components/Sign-in/SignIn";
 
-import SignUpForm from "./components/Sign-up/SignUp";
+import { SignUpForm } from "./components/Sign-up/SignUp";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./pages/LandingPage/LandingPage";
@@ -9,12 +9,10 @@ import ProductsPage from "./pages/ProductsPage/ProductsPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 
-import Header from "./components/Header";
+import { Header } from "./components/Header";
 import BlogsPage from "./pages/BlogsPage/Blogs";
 import UsersPage from "./pages/UsersPage/UsersPage";
 import PostsPage from "./pages/PostsPage/PostsPage";
-
-
 
 function App() {
   const [user, setUser] = useState();

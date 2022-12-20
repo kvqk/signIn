@@ -6,7 +6,7 @@ interface Ipassword {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const PasswordInput: React.FC<Ipassword> = (props, name) => {
+export const PasswordInput: React.FC<Ipassword> = (props, name) => {
   return (
     <input
       placeholder="Password"
@@ -27,4 +27,3 @@ const PasswordInput: React.FC<Ipassword> = (props, name) => {
     />
   );
 };
-export default PasswordInput;

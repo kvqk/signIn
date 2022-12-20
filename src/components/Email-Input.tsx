@@ -1,13 +1,12 @@
 import React from "react";
 
 interface IEmail {
-  name: string,
-  ref?: any,
-  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name: string;
+  ref?: any;
+  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-
-const EmailInput:  React.FC<IEmail> = (props) => {
+export const EmailInput: React.FC<IEmail> = (props) => {
   return (
     <input
       placeholder="Email"
@@ -20,12 +19,10 @@ const EmailInput:  React.FC<IEmail> = (props) => {
         height: "30px",
         width: "300px",
         borderLeftStyle: "hidden",
-        borderRightStyle: "hidden" ,
-        borderTopStyle: "hidden"
+        borderRightStyle: "hidden",
+        borderTopStyle: "hidden",
       }}
       onChange={props.handleChange}
     />
   );
 };
-
-export default EmailInput;

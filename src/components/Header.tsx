@@ -4,12 +4,12 @@ import BlackLogo from "./Icons/BlackLogo";
 import "./Header.css";
 
 interface IHeader {
-  name?: string,
-  ref?: any,
-  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name?: string;
+  ref?: any;
+  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Header:  React.FC<IHeader> = () => {
+export const Header: React.FC<IHeader> = () => {
   const navigate = useNavigate();
   const handleProductsClick = () => {
     navigate("/products");
@@ -53,4 +53,3 @@ const Header:  React.FC<IHeader> = () => {
     </div>
   );
 };
-export default Header;

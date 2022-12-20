@@ -1,16 +1,12 @@
-
 import React from "react";
 
 interface IDob {
-  name: string,
-  ref: any,
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name: string;
+  ref: any;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-
-
-
-const DOBInput:  React.FC<IDob> = (props) => {
+export const DOBInput: React.FC<IDob> = (props) => {
   return (
     <input
       placeholder="Date Of Birth"
@@ -24,11 +20,10 @@ const DOBInput:  React.FC<IDob> = (props) => {
         height: "30px",
         width: "300px",
         borderLeftStyle: "hidden",
-        borderRightStyle: "hidden" ,
-        borderTopStyle: "hidden"
+        borderRightStyle: "hidden",
+        borderTopStyle: "hidden",
       }}
       onChange={props.handleChange}
     />
   );
 };
-export default DOBInput;

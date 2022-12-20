@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://media.istockphoto.com/vectors/gradient-blob-abstract-background-vector-id1282505760?k=20&m=1282505760&s=612x612&w=0&h=REKlz8PanglihiT_Z4_MY3eJhAMRe4F8zfPp0rVzccg=);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#form {
+  height: 429px;
+  width: 500px;
+  border: 2px solid black;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px;
+  padding: 0px 50px;
+  align-items: center;
+  background-color: white;
+}
+#button{
+    display: flex;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5749;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+}

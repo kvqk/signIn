@@ -1,0 +1,218 @@
+#background {
+  background-image: url("https://media.discordapp.net/attachments/909558988364976211/1026666323893301368/brooke-cagle-cb4Dv50LN1Y-unsplash_1.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  align-items: unset;
+  display: flex;
+  flex-direction: column;
+}
+#navBarBorder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar {
+  width: 68px;
+  height: 28px;
+  font-family: sans-serif;
+  color: #6d7d8b;
+  padding-left: 30px;
+}
+.getAccess {
+  width: 116px;
+  height: 54px;
+  font-family: sans-serif;
+  color: #4da0fd;
+  border: 2px solid #4da0fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+#instantText {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  height: 120px;
+  width: 514px;
+  padding-left: 124px;
+  padding-top: 150px;
+}
+#text1 {
+  padding-left: 124px;
+  color: white;
+  font-size: 18px;
+  height: 58px;
+  width: 323.85px;
+  font-family: sans-serif;
+  padding-top: 22px;
+}
+#emailInput {
+  height: 56px;
+  width: 316.92px;
+  border-radius: 4px;
+  margin-top: 84px;
+  margin-left: 124px;
+  padding-left: 16px;
+  border: none;
+}
+#button1 {
+  background-color: #0bbef2;
+  height: 56px;
+  width: 163.41px;
+  margin-left: 13.8px;
+  border: none;
+  color: white;
+}
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f7fa;
+}
+#meetingImg {
+  margin-left: 793px;
+  position: absolute;
+  background-image: url(https://media.discordapp.net/attachments/919796487658037310/1027080093526405212/unknown.png);
+}
+#calender {
+  position: absolute;
+  margin-left: 1187px;
+  height: 100.02px;
+  width: 100.02px;
+}
+#product {
+  position: absolute;
+  height: 130px;
+  width: 263px;
+  margin-left: 691px;
+  margin-top: 243px;
+}
+#notification {
+  position: absolute;
+  height: 130.96px;
+  width: 130.96px;
+  margin-left: 806px;
+  margin-top: 600.04px;
+}
+#teamworkTxt {
+  font-weight: 800;
+  height: 120px;
+  width: 398px;
+  font-size: 48px;
+  font-family: sans-serif;
+  padding-left: 140px;
+  padding-top: 336px;
+}
+#giveText {
+  height: 145px;
+  width: 465px;
+  padding-left: 140px;
+  padding-top: 30px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #182d40;
+}
+#pageThree {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f7fa;
+}
+#pageThreeImg {
+  position: absolute;
+  height: 575px;
+  width: 600px;
+  margin-top: 139px;
+}
+#pageThreeImgTwo {
+  position: absolute;
+  width: 229px;
+  height: 116px;
+  margin-left: 344px;
+  margin-top: 195px;
+}
+#pin {
+  position: absolute;
+  width: 220px;
+  height: 99px;
+  margin-left: 344px;
+  margin-top: 330px;
+}
+#simpleText {
+  width: 398px;
+  height: 120px;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  margin-left: 700px;
+  padding-top: 250px;
+}
+#simpleGivetext {
+  height: 145px;
+  width: 465px;
+  font-family: sans-serif;
+  margin-left: 700px;
+  margin-top: 30px;
+}
+#scheduleTitle {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  height: 120px;
+  width: 398px;
+  margin-top: 213px;
+  margin-left: 135px;
+  position: absolute;
+}
+#scheduleText {
+  height: 160px;
+  width: 400px;
+  position: absolute;
+  margin-top: 363px;
+  margin-left: 135px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+#computerImg {
+  height: 675px;
+  position: absolute;
+  width: 700px;
+  margin-left: 700px;
+}
+#calenderTwo {
+  width: 271px;
+  height: 304px;
+  margin-left: 804px;
+  position: absolute;
+  margin-top: 102px;
+}
+#pageThreeDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#whatText {
+  font-weight: 800;
+  font-size: 48px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+#row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.reviews {
+  height: 374px;
+  width: 366px;
+  display: flex;
+  justify-content: center;
+}
+

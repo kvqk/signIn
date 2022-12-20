@@ -1,0 +1,16 @@
+
+#text {
+  width: 68px;
+  height: 28px;
+  font-family: sans-serif;
+  color: #6d7d8b;
+  padding-left: 30px;
+  cursor: pointer;
+}
+#logoClick {
+  cursor: pointer;
+}
+#navBarAlign {
+  display: flex;
+  align-items: center;
+}

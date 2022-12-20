@@ -1,0 +1,108 @@
+
+#footerBody {
+  width: 100%;
+  height: 336px;
+  background-color: #252b3b;
+  display: flex;
+  flex-direction: row;
+}
+#div {
+  height: 300px;
+  width: 130px;
+  margin-left: 143px;
+}
+#divThree{
+  height: 300px;
+  width: 130px;
+  margin-left: 143px;
+  margin-top: 35px;
+}
+#divFour{
+  height: 300px;
+  width: 130px;
+  margin-left: 143px;
+  margin-top: 44px;
+}
+#column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+#teamImg {
+  height: 60px;
+  width: 87px;
+  display: flex;
+  margin-bottom: 22px;
+}
+#textColor {
+  display: flex;
+  color: white;
+}
+.footerImg {
+  height: 16px;
+  width: 16px;
+}
+.footerText {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-left: 7px;
+  margin-bottom: 20px;
+  color: white;
+}
+#titleColumn {
+  height: 21px;
+  width: 69px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  padding-top: 43px;
+  padding-bottom: 22px;
+}
+#longWords {
+  width: 119px;
+  height: 27px;
+  font-size: 14;
+  font-family: sans-serif;
+  color: white;
+  padding-bottom: 5px;
+}
+#shortWords {
+  width: 69px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  padding-bottom: 22px;
+}
+#longestWord {
+  width: 200px;
+  height: 27px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  padding-bottom: 5px;
+  text-overflow: clip;
+}
+#subscribe {
+  padding-top: 37px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+#divTwo {
+  height: 300px;
+  width: 297px;
+  margin-left: 95px;
+}
+#email {
+  font-size: 18px;
+  color: lightskyblue;
+  height: 56px;
+  width: 200px;
+  border: none;
+  margin-top: 17px;
+  padding-left: 16px;
+}
+

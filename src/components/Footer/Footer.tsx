@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.css";
 interface IFooter {
-  name?: string,
-  ref?: any,
-  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
+  name?: string;
+  ref?: any;
+  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Footer: React.FC<IFooter> = () => {

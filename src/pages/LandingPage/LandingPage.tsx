@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import "./LandingPage.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { postDummy } from "src/postDummyData";
+import axios from "axios";
 const LandingPage = () => {
+  const [selectedPost, setSelectedPost] = useState();
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <div>
       <div id="background">
@@ -95,29 +120,23 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <div id="pageThree">
-        <div id="pageThreeDiv">
-          <p id="whatText">What people say about us</p>
-          <div id="row">
-            <img
-              className="reviews"
-              src="https://media.discordapp.net/attachments/966476303500976211/1028743225290281040/unknown.png"
-              alt="Amy"
-            />
-            <img
-              className="reviews"
-              src="https://media.discordapp.net/attachments/966476303500976211/1028744034543468664/unknown.png"
-              alt="Jane"
-            />
-            <img
-              className="reviews"
-              src="https://media.discordapp.net/attachments/966476303500976211/1028746364970074213/unknown.png"
-              alt="Eleanor"
-            />
-          </div>
-          <Footer />
-        </div>
+      <div id="pageThree" style={{ paddingTop: "200px" }}>
+        <p id="myPosts">My Posts</p>
+        <Carousel responsive={responsive}>
+          {postDummy?.map((object: any) => {
+            return (
+              <div key={object.id}>
+                <div className="postBox">
+                  <h1 id="postTitle">{object.title}</h1>
+                  <span id="postContent"> {object.content}</span>
+                  <img id="postImg" src={object.img} alt="img" />
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
       </div>
+      <Footer />
     </div>
   );
 };

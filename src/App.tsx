@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/space-before-function-paren */
 import React, { useState } from "react";
 import SignInForm from "./components/Sign-in/SignIn";
 
@@ -10,8 +11,7 @@ import BlogPage from "./pages/BlogPage/BlogPage";
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 
 import { Header } from "./components/Header";
-import BlogsPage from "./pages/BlogsPage/Blogs";
-import UsersPage from "./pages/UsersPage/UsersPage";
+import MyPosts from "./pages/myPosts/MyPosts";
 import PostsPage from "./pages/PostsPage/PostsPage";
 
 function App() {
@@ -20,14 +20,14 @@ function App() {
     <div style={{ margin: 0, padding: 0 }}>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<LandingPage />} /> */}
-          {/* <Route path="products" element={<ProductsPage />} />
-          <Route path="blogs" element={<BlogsPage />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="products" element={<ProductsPage />} />
           <Route path="/blog/:id" element={<BlogPage />} />
           <Route path="contact-us" element={<ContactUs />} />
-          <Route path="Users" element={<UsersPage />} />
-          <Route path="Posts" element={<PostsPage />} /> */}
-          <Route path="SignUp" element={<SignUpForm />} />
+          <Route path="my-posts" element={<MyPosts />} />
+          <Route path="Posts" element={<PostsPage />} />
+          <Route path="sign-up" element={<SignUpForm />} />
+          <Route path="sign-in" element={<SignInForm />} />
         </Routes>
 
         {/* <Routes>

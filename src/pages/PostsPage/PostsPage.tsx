@@ -1,13 +1,28 @@
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import LikeButton from "../../components/Icons/LikeButton";
 import axios, { Axios } from "axios";
 import React, { useEffect, useState } from "react";
 import "./PostsPage.css";
 import PostComponent from "../../components/PostCompent/PostComponent";
 
-const PostsPage = (props) => {
-  const [data, setData] = useState();
+const PostsPage = (props: any) => {
+  const [data, setData] = useState<
+    Array<{
+      id: string;
+      image: string;
+      likes: string;
+      tags: string;
+      text: string;
+      title: string;
+      publishDate: string;
+      owner: {
+        picture: string;
+        firstName: string;
+        lastName: string;
+      };
+    }>
+  >();
   const [loading, setLoading] = useState(false);
   console.log(data);
   useEffect(() => {
@@ -38,7 +53,7 @@ const PostsPage = (props) => {
       {data?.map((object) => {
         console.log(object);
         return (
-          <div>
+          <div key={object.id}>
             <PostComponent
               id={object.id}
               image={object.image}

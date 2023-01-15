@@ -17,14 +17,11 @@ export const Header: React.FC<IHeader> = () => {
   const handleContactUsClick = () => {
     navigate("/contact-us");
   };
-  const handleBlogClick = () => {
-    navigate("/blogs");
-  };
   const handleLogoClick = () => {
     navigate("/");
   };
-  const handleUsersClick = () => {
-    navigate("/Users");
+  const handleMyPostsClick = () => {
+    navigate("/my-posts");
   };
   const handlePostsClick = () => {
     navigate("/Posts");
@@ -38,11 +35,8 @@ export const Header: React.FC<IHeader> = () => {
         <p id="text" onClick={handlePostsClick}>
           Posts
         </p>
-        <p id="text" onClick={handleUsersClick}>
-          Users
-        </p>
-        <p id="text" onClick={handleBlogClick}>
-          Blog
+        <p id="text" onClick={handleMyPostsClick}>
+          My Posts
         </p>
         <p id="text" onClick={handleContactUsClick}>
           Contact

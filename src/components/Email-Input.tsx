@@ -26,3 +26,4 @@ export const EmailInput: React.FC<IEmail> = (props) => {
     />
   );
 };
+export default EmailInput;

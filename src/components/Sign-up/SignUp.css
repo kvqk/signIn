@@ -6,9 +6,6 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://img.freepik.com/free-photo/blob-standing-liquid-holding-seamless_1134-1354.jpg?w=1800&t=st=1664179071~exp=1664179671~hmac=405c4b34a510530ab3bfc878ba7800aef720905a20997bc788548ade3d3ef5e7);
 }
 #form {
   height: 575px;
@@ -18,12 +15,11 @@
   display: flex;
   border-radius: 10px;
   padding: 0px, 50px;
-  opacity: 0.5;
-  align-items: center;
 }
 #inputError {
     color: red;
-    height: 1px;
+    font-family: sans-serif;
+    height: 35px;
 }
 #submitButton   {
     margin-top: 60px;
@@ -33,4 +29,9 @@
     border: none;
     margin-bottom: 22px;
     cursor: pointer;
+}
+#signUpTxt{
+  font-family: sans-serif;
+  margin-top: 20px;
+
 }

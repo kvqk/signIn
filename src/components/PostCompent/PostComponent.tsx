@@ -1,19 +1,19 @@
 import React from "react";
 import LikeButton from "../Icons/LikeButton";
 interface IPostComponent {
-  name: string;
-  ref: any;
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  name?: string;
+  ref?: any;
+  handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   id: any;
-  image: any;
-  likes: any;
-  tags: any;
-  text: any;
-  title: any;
+  image?: any;
+  likes?: any;
+  tags?: any;
+  text?: any;
+  title?: any;
   publishDate: any;
-  picture: any;
-  firstName: any;
-  lastName: any;
+  picture?: any;
+  firstName?: any;
+  lastName?: any;
 }
 
 const PostComponent: React.FC<IPostComponent> = (props) => {

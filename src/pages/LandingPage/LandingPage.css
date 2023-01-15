@@ -152,7 +152,7 @@
   margin-left: 700px;
   padding-top: 250px;
 }
-#simpleGivetext {
+#simpleGiveText {
   height: 145px;
   width: 465px;
   font-family: sans-serif;
@@ -194,15 +194,15 @@
 #pageThreeDiv {
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-#whatText {
+#myPosts {
   font-weight: 800;
   font-size: 48px;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
+  flex-direction: row;
 }
 #row {
   display: flex;
@@ -215,4 +215,26 @@
   display: flex;
   justify-content: center;
 }
-
+.postBox {
+  margin-left: 15px;
+  height: 500px;
+  width: 450px;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#postImg {
+  height: 300px;
+  width: 250px;
+  margin-top: 10px;
+}
+#postTitle {
+  font-family: sans-serif;
+}
+#postContent{
+  font-family: sans-serif;
+ padding: 20px;
+}

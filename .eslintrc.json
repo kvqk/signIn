@@ -11,8 +11,8 @@
 
   "parserOptions": {
     "ecmaVersion": "latest",
-    "project": ["./tsconfig.json"],
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
@@ -36,6 +36,8 @@
     "no-shadow": "off",
     "semi": [0, "always"],
     "@typescript-eslint/semi": 0,
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "@typescript-eslint/explicit-function-return-type": 0,
     "prettier/prettier": "error",

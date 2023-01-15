@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import "./ContactUs.css";
 
 const ContactUs = () => {
@@ -21,15 +21,6 @@ const ContactUs = () => {
             <input id="messageInput" placeholder="Message" />
             <button id="sendButton">SEND</button>
           </div>
-        </div>
-        <div id="purpleSide">
-          <div>
-            <p id="purpleSideTitle">Contact Us</p>
-          </div>
-
-          <p id="purpleSideText">
-            11/21 Baker Street, Near Hyosung Showroom France
-          </p>
         </div>
       </div>
       <div></div>

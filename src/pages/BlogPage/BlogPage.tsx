@@ -1,4 +1,4 @@
-import Header from "../../components/Header"
+import { Header } from "../../components/Header";
 import Footer from "../../components/Footer/Footer";
 import React from "react";
 import "./BlogPage.css";
@@ -8,18 +8,16 @@ import { blogsData } from "../../data";
 const BlogPage = () => {
   const { id } = useParams();
 
-  const blog = blogsData.find((blog) => {
+  const selectedBlog = blogsData.find((blog) => {
     return blog.id === id;
   });
-
-  console.log(blog);
 
   return (
     <>
       <Header />
       <div id="page">
         <div id="mainDiv">
-          <p id="secretText">{blog.title}</p>
+          <p id="secretText">{selectedBlog?.title}</p>
           <div id="pictureDiv">
             <img
               id="personPicture"
